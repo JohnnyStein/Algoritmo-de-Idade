@@ -9,6 +9,7 @@ using namespace std;
 	int anoatual;
 	int mes;
 	int dia;
+	int fmes;
 
 int main()
 {
@@ -48,8 +49,9 @@ int main()
 				cout << "Reiniciando o Programa!" << endl;
 				main();
 			} else {
+				fmes = 12 - mes;
 			cout << "Sua data de nascimento e " << dia << "/" << mes << "/" << ano << endl;
-    cout << "E voce tem " << idade << " anos de idade!" << endl;
+    cout << "E voce tem " << idade << " anos e " << fmes << " meses!" << endl;
 			}
 		}
 	}
